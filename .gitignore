@@ -1,1 +1,17 @@
-__pycache__/\n*.env\n*.pyc\n*.db\n.vscode/
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Environments
+.venv/
+*.env
+
+# Databases
+*.db
+
+# VS Code settings
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
