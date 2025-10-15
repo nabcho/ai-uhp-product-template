@@ -61,6 +61,12 @@ jobs:
         source .venv/bin/activate
         python src/netsentry/cli.py check --url https://example.com || true
 
+    - name: Run pytest
+      run: |
+        source .venv/bin/activate
+        pip install pytest
+        pytest -v
+
     - name: Build Docker image
       run: |
         docker build -t netsentry-ci:latest .
