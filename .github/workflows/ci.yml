@@ -20,11 +20,18 @@ jobs:
         echo "Listing contents of repository:"
         tree -L 2 || ls -R .
 
-
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.11"
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
     - name: Install dependencies
       run: |
