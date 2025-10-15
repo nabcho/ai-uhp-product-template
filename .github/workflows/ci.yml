@@ -18,7 +18,8 @@ jobs:
       run: |
         echo "Current working directory: $(pwd)"
         echo "Listing contents of repository:"
-        ls -R .
+        tree -L 2 || ls -R .
+
 
     - name: Set up Python
       uses: actions/setup-python@v5
