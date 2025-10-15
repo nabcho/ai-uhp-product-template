@@ -12,4 +12,4 @@ app = FastAPI(
 @app.get("/")
 def root():
     """Root endpoint for quick health check."""
-    return {"message": "✅ NetSentry API is alive and running!"
+    return {"message": "✅ NetSentry API is alive and running!"}
