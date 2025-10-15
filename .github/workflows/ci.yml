@@ -60,3 +60,13 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t netsentry-ci:latest .
+
+    - name: Upload build logs and config snapshot
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-artifacts
+        path: |
+          requirements.txt
+          Dockerfile
+          .github/workflows/ci.yml
