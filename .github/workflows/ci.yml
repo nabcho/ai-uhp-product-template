@@ -65,7 +65,7 @@ jobs:
       run: |
         source .venv/bin/activate
         pip install pytest
-        pytest -v
+        pytest -v tests/
 
     - name: Build Docker image
       run: |
