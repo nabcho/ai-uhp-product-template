@@ -1,4 +1,5 @@
 # app/main.py
+# Synesis auto-deploy test v1.5
 from fastapi import FastAPI
 
 # ➊ Create the FastAPI app instance
