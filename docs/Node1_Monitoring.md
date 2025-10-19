@@ -1,0 +1,1 @@
+- 2025-10-19 | Observation: Render returned '404 x-render-routing: no-server' — confirms free-tier container asleep. No active instance; expected on free plan. No action required until upgrade.
