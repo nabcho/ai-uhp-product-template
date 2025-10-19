@@ -102,3 +102,18 @@
 
 ---
 
+
+---
+
+## 🕓 Directive ChangeLog
+
+> **Purpose:** maintain transparent, versioned traceability for all modifications to the Synesis constitution.  
+> Each line = date + short note on what changed.  Append only; never delete old notes.
+
+| Date | Directive(s) Affected | Description |
+|------|-----------------------|--------------|
+| 2025-10-19 | 1–15 | Initial consolidation and priority ordering of all Synesis Directives. |
+| 2025-10-20 | — | Added ChangeLog section to enable future version tracking. |
+
+---
+
